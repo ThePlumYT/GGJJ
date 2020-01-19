@@ -17,4 +17,4 @@ plum.on('message', message => {
     message.delete()
   }})
 
-plum.login('NjY4MDkwNjQ3NTcxNTk1Mjc0.XiRS-Q.nlEi39iLJeN9RE7Z4p4cqAOQRlI');
+plum.login(process.env.BOT_TOKEN);
