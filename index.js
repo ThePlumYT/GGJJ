@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+
+//Don't touch from here down unless you know partially what you're doing
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
@@ -13,3 +16,4 @@ client.on('message', message => {
   if(config.FILTER_LIST.some(word => message.content.toLowerCase().includes(word))){
     message.delete()
   }})
+
