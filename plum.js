@@ -4,8 +4,7 @@ const config = require("./config.json");
 
 plum.on('ready', () => {
   console.log(`Logged !`);
-  if (config.activity.playing == true) {
-    bot.user.setActivity('พิมพ์ /plum');
+  
 });
 
 plum.on('message', msg => {
