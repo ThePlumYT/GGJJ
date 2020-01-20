@@ -15,7 +15,7 @@ plum.on('message', msg => {
 plum.on('message', message => {
   if(config.KL.some(word => message.content.toLowerCase().includes(word))){
     message.delete()
-    message.reply("พิมคำหยาบไม่น่ารักเลยน่ะ หนูลบให้แล้วน่ะค่ะ")
+    message.reply("พิมคำหยาบไม่น่ารักเลยน่ะ หนูลบให้แล้วน่ะค่ะ ***อาจจะมีบัค คือ เมื่อพิมคำหยาบคายมาแต่ในแชทของผู้พิมพ์อาจไม่ถูกลบ แต่ผู้ใช้คนอื่นจะไม่เห็นอย่างแน่นอนจ้า")
   }})
 
 plum.login(process.env.BOT_TOKEN);
