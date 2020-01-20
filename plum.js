@@ -15,7 +15,7 @@ plum.on('message', msg => {
 plum.on('message', message => {
   if(config.KL.some(word => message.content.toLowerCase().includes(word))){
     message.delete()
-    message.reply("พิมคำหยาบไม่น่ารักเลยน่ะ หนูลบให้แล้วน่ะค่ะ   ***ในมือถืออาจจะยังแสดงคำหยาบอยู่ แต่จริงๆถูกลบไปแล้ว")
+    message.reply("พิมคำหยาบไม่น่ารักเลยน่ะ หนูลบให้แล้วน่ะค่ะ  ***ถ้าเกิดพิมพ์คำหยาบในมือถืออาจจะยังแสดงคำหยาบอยู่ แต่จริงๆถูกลบไปแล้ว")
     message.delete()
     
   }})
