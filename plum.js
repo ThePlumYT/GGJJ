@@ -4,7 +4,6 @@ const config = require("./config.json");
 
 plum.on('ready', () => {
   console.log(`Logged !`);
-  plum.user.setActivity('command /plum');
 });
 
 plum.on('message', msg => {
