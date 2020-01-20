@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 plum.on('ready', () => {
   console.log(`Logged !`);
-  plum.user.setGame('พิมพ์ /plum เพื่อดูข้อมูล');
+  plum.user.setActivity('พิมพ์ /plum เพื่อดูข้อมูล');
   
 });
 
