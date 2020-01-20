@@ -16,8 +16,9 @@ plum.on('message', message => {
   if(config.KL.some(word => message.content.toLowerCase().includes(word))){
     message.delete()
     message.delete()
-    message.delete()
     message.reply("พิมคำหยาบไม่น่ารักเลยน่ะ หนูลบให้แล้วน่ะค่ะ")
+    message.delete()
+    message.delete()
   }})
 
 plum.login(process.env.BOT_TOKEN);
