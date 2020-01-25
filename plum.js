@@ -4,6 +4,7 @@ const config = require("./config.json");
 
 plum.on('ready', () => {
   console.log(`Logged !`);
+  bot.user.setGame("Type !help");
   
 });
 
