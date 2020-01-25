@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 plum.on('ready', () => {
   console.log(`Logged !`);
-  plum.user.setActivity('Hi', {type: 'WATCHING'})
+  client.user.setActivity('YouTube', { type: 'WATCHING' })
   
 });
 
