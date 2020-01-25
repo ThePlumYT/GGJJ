@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 plum.on('ready', () => {
   console.log(`Logged !`);
-  bot.user.setPresent("Hello");
+  bot.user.setActivity("Hello");
   
 });
 
