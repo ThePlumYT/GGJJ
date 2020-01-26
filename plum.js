@@ -8,8 +8,16 @@ plum.on('ready', () => {
 });
 
 plum.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+  if (msg.content === '/on') {
+    msg.reply('***** ร้าน  เปิดแล้วจ้า  @everyone *****');
+    msg.delete();
+  }
+});
+
+plum.on('message', msg => {
+  if (msg.content === '/off') {
+    msg.reply('***** ร้าน  ปิดแล้วจ้า  @everyone *****');
+    msg.delete();
   }
 });
 
